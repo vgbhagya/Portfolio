@@ -3,7 +3,7 @@ import { BsInfoCircleFill } from 'react-icons/bs';
 import PageHeaderContent from "../../components/pageHeaderContent";
 import ProjectItem from '../projects/ProjectItem';
 import { projectLists } from "./projectList";
-import './style.css';
+import './style.scss';
 
 const Projects = () => {
     return(

@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 
 const PageHeaderContent = (props) =>{
     const {headerText,icon} = props;

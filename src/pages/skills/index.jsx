@@ -4,7 +4,7 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { Line } from 'rc-progress';
 import { Animate,AnimateKeyframes } from 'react-simple-animate';
 import { skillsData } from "./utils";
-import './style.css';
+import './style.scss';
 
 const Skills = () => {
     return(

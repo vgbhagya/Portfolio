@@ -1,3 +1,9 @@
+img {
+ border-radius: 60px;
+margin-left: 45%;
+ 
+}
+
 .home_main {
   position: relative;
   height: 100%;
@@ -9,7 +15,7 @@
 .home_text {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 .home_text h1 {
@@ -34,7 +40,7 @@
   border: 1px solid rgb(241, 235, 235);
   background-color: rgb(213, 231, 17);
   border-radius: 10px;
-  margin: 60px 10px 10px 10px ; /* Add some margin between images if desired */
+  margin: 40px 10px 10px 10px ; /* Add some margin between images if desired */
 }
 
 .homeList img:hover {
@@ -61,12 +67,23 @@
     font-size: 3rem;
     line-height: 5rem;
   }
+  img {
+    border-radius: 60px;
+   margin-left: 35%;
+    
+   }
+ 
 }
 @media only screen and (min-width: 551px) and (max-width: 768px) {
   .home_text h1 {
     font-size: 4rem;
     line-height: 6rem;
   }
+  img {
+    border-radius: 60px;
+   margin-left: 35%;
+    
+   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
@@ -74,6 +91,12 @@
     font-size: 6rem;
     line-height: 8rem;
   }
+  img {
+    border-radius: 60px;
+   margin-left: 35%;
+    
+   }
+ 
 }
 
 

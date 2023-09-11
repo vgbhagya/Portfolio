@@ -1,7 +1,7 @@
 import React from "react";
 import { BsInfoCircleFill } from 'react-icons/bs';
 import PageHeaderContent from "../../components/pageHeaderContent";
-import './style.css';
+import './style.scss';
 // import {
 //     VerticalTimeline,
 //     VerticalTimelineElement,

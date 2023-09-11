@@ -1,7 +1,8 @@
 // src/App.js
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./index.css";
+import './index.css';
+import "./App.css";
 import Home from './pages/home';
 import Experience from './pages/experience';
 import Contact from './pages/contact';

@@ -1,0 +1,105 @@
+// /* Styling for screens larger than 768px (desktop) */
+
+.navbar {
+  background-color: var(--yellow-theme-nav-background-color);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    padding: 0px 20px;
+    flex: 1;
+
+    &_logo {
+      color: var(--yellow-theme-main-color);
+      cursor: pointer;
+    }
+    &_menu {
+      display: flex;
+      list-style: none;
+      text-align: center;
+
+&.active {
+  transform: translateX(0);
+}
+
+      &_item {
+        line-height: 40px;
+        margin-right: 1.5rem;
+        font-size: 1.6rem;
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 0;
+          background: transparent;
+          transition: all 0.5s ease;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &:hover::after{
+          width: 100%;
+          background: var(--yellow-theme-main-color);
+        }
+        &_links{
+          color: var(--yellow-theme-main-color);
+          text-decoration: none;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.nav-icon {
+  display: none;
+  // cursor: pointer;
+  // color: var(--yellow-theme-main-color);
+  // font-size: 2rem;
+  // margin-right: 20px;
+}
+
+/* Media query for screens up to 768px (mobile) */
+@media only screen and (max-width: 768px) {
+  .navbar_container_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    position: absolute;
+    top: 80px;
+    right: -110%; /* Change 'left' to 'right' */
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &.active {
+      // background: #181818;
+      right: 0px; /* Change 'left' to 'right' */
+      opacity: 1;
+    }
+
+    &_item {
+      // border-bottom: 1px solid #282828;
+      margin: 0px;
+      padding: 2px 0px;
+    }
+  }
+
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+    color: var(--yellow-theme-main-color);
+    position: absolute; /* Add this line */
+    top: 20px; /* Adjust the top value as needed */
+    left: 35em; /* Adjust the right value as needed */
+  }
+}

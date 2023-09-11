@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from 'react-simple-animate';
-import './style.css';
+import './style.scss';
 import resume from '../../assets/resume.pdf'; 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

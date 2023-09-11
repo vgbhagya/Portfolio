@@ -1,13 +1,17 @@
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import githubicon from "../../assets/githubicon.png";
 import linkedinicon from "../../assets/linkedinicon.png";
 import instagramicon from "../../assets/instagramicon.png";
 import twittericon from "../../assets/twittericon.png";
+import profilePic from '../../assets/profilePic.JPG';
 
 const Home = () => {
   return (
     <section id="home" className="home_main">
+      <div>
+         <img src={profilePic} alt="Profile" width={120} height={120}/> 
+      </div>
       <div className="home_text">
         <h1>
           I'm Bhagyashree V G
