@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { RiContactsFill } from "react-icons/ri";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { Animate } from 'react-simple-animate';
 import './style.scss';
@@ -85,7 +85,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <PageHeaderContent
         headerText="Contact Me "
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<RiContactsFill size={40} />}
       />
       <div className="contact_content">
         <Animate

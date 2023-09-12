@@ -1,5 +1,5 @@
 .card {
-    /* border: 1px solid var(--yellow-theme-main-color); */
+    /* border: 1px solid var(--purple-theme-main-color); */
     padding: 16px;
     margin: 16px;
     border-radius: 4px;
@@ -8,7 +8,7 @@
   .card h3 {
     font-size: 20px;
     margin-bottom: 8px;
-    color: rgb(181, 198, 88);
+    color:  var(--purple-theme-main-color);
     font-style: bold;
   }
   

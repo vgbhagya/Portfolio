@@ -1,34 +1,33 @@
-img {
- border-radius: 60px;
-margin-left: 45%;
- 
-}
 
-.home_main {
+
+.home {
   position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-}
-.home_text {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
+  
+ 
+  &_text-wrapper {
+    display: flex;
+    justify-content: center;
+  
+
+    h1{
+      color: var(--purple-theme-main-color);
+      margin: 5%;
+      font-weight: 500;
+      font-size: 6.5rem;
+      line-height: 8.5rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typingEffectAnimation 2.5s steps(30, end);
+    }
+  }
 }
 
-.home_text h1 {
-  color: var(--yellow-theme-main-color);
-  margin: 0px;
-  font-weight: 400;
-  font-size: 6rem;
-  line-height: 7rem;
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingEffectAnimation 2.5s steps(30, end);
-}
 
 .homeList {
   display: flex; /* Use flexbox to create a row layout */
@@ -38,9 +37,9 @@ margin-left: 45%;
 
 .homeList img {
   border: 1px solid rgb(241, 235, 235);
-  background-color: rgb(213, 231, 17);
+  background-color: var(--purple-theme-main-color);
   border-radius: 10px;
-  margin: 40px 10px 10px 10px ; /* Add some margin between images if desired */
+  margin: 0px 10px 10px 10px ; /* Add some margin between images if desired */
 }
 
 .homeList img:hover {
@@ -62,41 +61,32 @@ margin-left: 45%;
   width: 50px;
   height: 50px;
 }
-@media only screen and (max-width: 550px) {
-  .home_text h1 {
-    font-size: 3rem;
+@media only screen and (max-width : 550px) {
+  .home_text-wrapper h1 {
+    margin-top: 20%;
+    font-size: 4rem;
     line-height: 5rem;
   }
-  img {
-    border-radius: 60px;
-   margin-left: 35%;
-    
-   }
+ 
  
 }
 @media only screen and (min-width: 551px) and (max-width: 768px) {
-  .home_text h1 {
-    font-size: 4rem;
+  .home_text-wrapper h1 {
+    margin-top: 15%;
+    font-size: 5rem;
     line-height: 6rem;
   }
-  img {
-    border-radius: 60px;
-   margin-left: 35%;
-    
-   }
+ 
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-  .home_text h1 {
-    font-size: 6rem;
-    line-height: 8rem;
+  .home_text-wrapper h1 {
+    margin-top: 5%;
+    margin-right: 45%;
+    font-size: 3rem;
+    line-height: 5rem;
   }
-  img {
-    border-radius: 60px;
-   margin-left: 35%;
-    
-   }
- 
+  
 }
 
 

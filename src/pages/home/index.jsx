@@ -4,22 +4,34 @@ import githubicon from "../../assets/githubicon.png";
 import linkedinicon from "../../assets/linkedinicon.png";
 import instagramicon from "../../assets/instagramicon.png";
 import twittericon from "../../assets/twittericon.png";
-import profilePic from '../../assets/profilePic.JPG';
+// import profilePic from '../../assets/profilePic.JPG';
+import { Animate } from "react-simple-animate";
 
 const Home = () => {
   return (
-    <section id="home" className="home_main">
-      <div>
-         <img src={profilePic} alt="Profile" width={120} height={120}/> 
-      </div>
-      <div className="home_text">
+    <section id="home" className="home">
+      {/* <div className="home_image">
+         <img src={profilePic} alt="Profile" /> 
+      </div> */}
+      <div className="home_text-wrapper">
         <h1>
           I'm Bhagyashree V G
-          <br />
+          <br/>
           Full Stack Developer
         </h1>
       </div>
+      <Animate
+      play
+      duration={2.2}
+      delay={1}
+      start={{
+        transform : 'translateY(550px)'
+      }}
 
+      end={{
+        transform : 'translatex(0px)'
+      }}
+>
       <div className="homeList">
         <a href="https://github.com/vgbhagya" target="_blank" rel="noopener noreferrer">
           <img id="github" src={githubicon} alt="GitHub" />
@@ -46,6 +58,7 @@ const Home = () => {
           <img id="twitter" src={twittericon} alt="Twitter" />
         </a>
       </div>
+      </Animate>
     </section>
   );
 };

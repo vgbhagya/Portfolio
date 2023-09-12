@@ -1,28 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
-:root{
-    --yellow-theme-background-color:black;
-    --yellow-theme-main-color:rgb(255, 255, 0);
-    --yellow-theme-sub-text-color:#ffffff;
-    --yellow-theme-nav-background-color:black;
+:root {
+  /* --selected-theme-background-color: var(--yellow-theme-background-color);
+  --selected-theme-main-color: var(--yellow-theme-main-color);
+  --selected-theme-sub-text-color: var(--yellow-theme-sub-text-color);
+  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color); */
+
+  /* --yellow-theme-background-color : #1d1d1d;
+  --yellow-theme-main-color : #ffdd40;
+  --yellow-theme-sub-text-color : #ffffff;
+  --yellow-theme-nav-background-color : #181818;
+
+
+  --red-theme-background-color : #1d1d1d; 
+  --red-theme-main-color : #E82A2A; 
+  --red-theme-sub-text-color : #ffffff;
+  --red-theme-nav-background-color : #181818;
+
+  --green-theme-background-color : #1d1d1d; 
+  --green-theme-main-color : #6ac045; 
+  --green-theme-sub-text-color : #ffffff;
+  --green-theme-nav-background-color : #181818; */
+
+
+  --purple-theme-background-color : #1d1d1d; 
+  --purple-theme-main-color : #5078FF; 
+  --purple-theme-sub-text-color : #ffffff;
+  --purple-theme-nav-background-color : #181818;
+
+  --font-base: "Roboto Slab", serif;
+
+
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
+
 html{
-    font-size:62.5%;
-    height:100%;
+  font-size: 62.5%;
+  height: 100%;
 }
 
-body{
-    background: var(--yellow-theme-background-color);
-    height:100%;
+body {
+  background: var(--purple-theme-background-color);
+  height: 100%;
 }
-
 #root{
-    height: 100%;
+  height: 100%;
 }

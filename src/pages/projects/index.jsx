@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInfoCircleFill } from 'react-icons/bs';
+import { AiFillProject } from "react-icons/ai";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import ProjectItem from '../projects/ProjectItem';
 import { projectLists } from "./projectList";
@@ -10,7 +10,7 @@ const Projects = () => {
         <section id="projects" className="projects">
             <PageHeaderContent
               headerText= " My Projects "
-              icon={ <BsInfoCircleFill size={40} />}
+              icon={ <AiFillProject size={40} />}
             />
             <div className="project">
             <div className="projectList">

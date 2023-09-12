@@ -1,39 +1,41 @@
-// /* Styling for screens larger than 768px (desktop) */
 
 .navbar {
-  background-color: var(--yellow-theme-nav-background-color);
+  background-color: var(--purple-theme-nav-background-color);
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-
-  &_container {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  
+  &__container {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: inherit;
+    height: 80px;
     padding: 0px 20px;
-    flex: 1;
+    max-width: 1500px;
 
-    &_logo {
-      color: var(--yellow-theme-main-color);
+    &__logo {
+      color: var(--purple-theme-main-color);
+      align-items: center;
       cursor: pointer;
+      text-decoration: none;
+      font-size: 2rem;
+      flex-grow: 1;
     }
-    &_menu {
+
+    &__menu {
       display: flex;
       list-style: none;
       text-align: center;
-
-&.active {
-  transform: translateX(0);
-}
-
-      &_item {
+      &__item {
         line-height: 40px;
         margin-right: 1.5rem;
         font-size: 1.6rem;
-        position: relative;
 
         &::after {
           content: "";
@@ -41,65 +43,90 @@
           height: 3px;
           width: 0;
           background: transparent;
-          transition: all 0.5s ease;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
+          transition: width 0.7s ease, background-color 0.5s ease;
         }
-        &:hover::after{
+        &:hover::after {
           width: 100%;
-          background: var(--yellow-theme-main-color);
+          background: var(--purple-theme-main-color);
         }
-        &_links{
-          color: var(--yellow-theme-main-color);
+        &__links {
+          color: var(--purple-theme-main-color);
           text-decoration: none;
-          padding: 0.5rem;
+          padding: 0.5rem 1rem;
+          height: 100%;
+          border-bottom: 3px solid transparent;
         }
+        &__links{
+          padding-right: 0px;
+        }
+      }
+      &__item:last-child{
+        margin: 0;
       }
     }
   }
 }
+
 .nav-icon {
   display: none;
-  // cursor: pointer;
-  // color: var(--yellow-theme-main-color);
-  // font-size: 2rem;
-  // margin-right: 20px;
 }
 
-/* Media query for screens up to 768px (mobile) */
-@media only screen and (max-width: 768px) {
-  .navbar_container_menu {
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__container__menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 100%;
+    border-top: 1pxsolid #fff;
     position: absolute;
     top: 80px;
-    right: -110%; /* Change 'left' to 'right' */
+    left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
 
-    &.active {
-      // background: #181818;
-      right: 0px; /* Change 'left' to 'right' */
+    &.active{
+      background: #181818;
+      left: 0px;
       opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
     }
 
-    &_item {
-      // border-bottom: 1px solid #282828;
+    &__item{
+      border-bottom: 1px solid #282828;
       margin: 0px;
-      padding: 2px 0px;
+      padding: 20px 0;
+    }
+
+    &__item.active{
+      color: var(--purple-theme-main-color);
+      border: none;
+
+      &__links{
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+      }
     }
   }
-
+  .nav-item .active {
+    color: var(--purple-theme-main-color);
+    border: none;
+  }
   .nav-icon {
     display: block;
+    font-size: 1.8rem;
     cursor: pointer;
-    color: var(--yellow-theme-main-color);
-    position: absolute; /* Add this line */
-    top: 20px; /* Adjust the top value as needed */
-    left: 35em; /* Adjust the right value as needed */
+    color: var(--purple-theme-main-color);
+    left: 85%;
   }
 }
