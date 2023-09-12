@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import particlesConfig from "./helper/particlesConfig";
+import particlesConfig from './helper/particlesConfig';
 import "./App.scss";
 import Home from "./pages/home";
 import Skills from "./pages/skills";
