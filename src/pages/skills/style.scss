@@ -11,7 +11,7 @@
 }
 .skills_content-wrapper_inner-content_category-text {
   display: inline-block;
-  color: var(--purple-theme-main-color);
+  color: var(--yellow-theme-main-color);
   font-size: 22px;
   font-weight: 700;
   line-height: 1rem;
@@ -19,7 +19,7 @@
   position: relative;
   text-transform: uppercase;
   padding: 8px 10px;
-  border-bottom: 2px solid var(--purple-theme-main-color);
+  border-bottom: 2px solid var(--yellow-theme-main-color);
 }
 .skills_content-wrapper_inner-content_category-text::before,
 .skills_content-wrapper_inner-content_category-text::after{
@@ -27,7 +27,7 @@
     content:'';
     width: 2px;
     height: 5px;
-    background-color: var(--purple-theme-main-color);
+    background-color: var(--yellow-theme-main-color);
     bottom: -1px;
 
 }
@@ -48,7 +48,7 @@ p{
     margin: 0 0 10px;
     font-weight: 500;
     text-transform: uppercase;
-    color: var( --purple-theme-sub-text-color);
+    color: var( --yellow-theme-sub-text-color);
 }
 
 @media only screen and (max-width:768px){

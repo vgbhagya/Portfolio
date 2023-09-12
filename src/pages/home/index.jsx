@@ -4,15 +4,11 @@ import githubicon from "../../assets/githubicon.png";
 import linkedinicon from "../../assets/linkedinicon.png";
 import instagramicon from "../../assets/instagramicon.png";
 import twittericon from "../../assets/twittericon.png";
-// import profilePic from '../../assets/profilePic.JPG';
 import { Animate } from "react-simple-animate";
 
 const Home = () => {
   return (
     <section id="home" className="home">
-      {/* <div className="home_image">
-         <img src={profilePic} alt="Profile" /> 
-      </div> */}
       <div className="home_text-wrapper">
         <h1>
           I'm Bhagyashree V G

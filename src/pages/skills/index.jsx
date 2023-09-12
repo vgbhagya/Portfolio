@@ -1,6 +1,6 @@
 import React from "react";
 import { GiSkills } from "react-icons/gi"; 
-import PageHeaderContent from "../../components/pageHeaderContent";
+import PageHeaderContent from "../../components/PageHeaderContent";
 import { Line } from 'rc-progress';
 import { Animate,AnimateKeyframes } from 'react-simple-animate';
 import { skillsData } from "./utils";
@@ -44,7 +44,7 @@ const Skills = () => {
                                                 <Line
                                                 percent={skillItem.percentage}
                                                 strokeWidth="2"
-                                                strokeColor="var(--purple-theme-main-color)"
+                                                strokeColor="var(--yellow-theme-main-color)"
                                                 trailWidth="2"
                                                 strokeLinecap="square"
                                                 />

@@ -2,7 +2,7 @@
     padding:20px;
 }
 .contact_content_header-text{
-    color:var(--purple-theme-sub-text-color);
+    color:var(--yellow-theme-sub-text-color);
     display: inline-block;
     font-size: 22px;
     font-weight: 600;
@@ -11,7 +11,7 @@
     position: relative;
     text-transform: uppercase;
     padding: 5px 10px;
-    border-bottom: 2px solid var(--purple-theme-main-color);
+    border-bottom: 2px solid var(--yellow-theme-main-color);
 } 
 .contact_content_header-text::before
 .contact_content_header-text::after{
@@ -19,7 +19,7 @@
     content:"";
     width: 2px;
     height:5px;
-    background-color: var(--purple-theme-main-color);
+    background-color: var(--yellow-theme-main-color);
     bottom:-1px;
 }
 .contact_content_header-text::before{
@@ -47,12 +47,12 @@ div{
     .inputEmail,
     .inputDescription{
         width:100%;
-        border: 1.5px solid var(--purple-theme-main-color);
+        border: 1.5px solid var(--yellow-theme-main-color);
         padding: 16px 12px;
         transition: all 0.5s ease;
         position: relative;
         background-color: transparent;
-        color:var(--purple-theme-sub-text-color);
+        color:var(--yellow-theme-sub-text-color);
     }
 }
 .nameLabel,
@@ -64,7 +64,7 @@ div{
     top:7px;
     left:12px;
     transition: all 0.2s ease;
-    color: var(--purple-theme-sub-text-color);
+    color: var(--yellow-theme-sub-text-color);
     font-size: 16px; 
 }
 .inputName:focus,
@@ -87,27 +87,27 @@ div{
     padding: 10px 70px;
     font-size: 2rem;
     background: transparent;
-    color: var(--purple-theme-main-color);
-    border: 1.5px solid var(--purple-theme-main-color);
+    color: var(--yellow-theme-main-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
     font-weight: 500;
 }
 .btn1:hover{
     color: #000;
-    background: var(--purple-theme-main-color);
+    background: var(--yellow-theme-main-color);
 }
 .btn2{
     cursor: pointer;
     padding: 10px 70px;
     font-size: 2rem;
     background: transparent;
-    color: var(--purple-theme-main-color);
-    border: 1.5px solid var(--purple-theme-main-color);
+    color: var(--yellow-theme-main-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
     font-weight: 500;
     margin-left: 45%;
 }
 .btn2:hover{
     color: #000;
-    background: var(--purple-theme-main-color);
+    background: var(--yellow-theme-main-color);
 }
 
 @media only screen and (max-width : 768px){

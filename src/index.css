@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
 :root {
-  /* --selected-theme-background-color: var(--yellow-theme-background-color);
+  --selected-theme-background-color: var(--yellow-theme-background-color);
   --selected-theme-main-color: var(--yellow-theme-main-color);
   --selected-theme-sub-text-color: var(--yellow-theme-sub-text-color);
-  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color); */
+  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color);
 
-  /* --yellow-theme-background-color : #1d1d1d;
+  --yellow-theme-background-color : #1d1d1d;
   --yellow-theme-main-color : #ffdd40;
   --yellow-theme-sub-text-color : #ffffff;
   --yellow-theme-nav-background-color : #181818;
@@ -20,7 +20,7 @@
   --green-theme-background-color : #1d1d1d; 
   --green-theme-main-color : #6ac045; 
   --green-theme-sub-text-color : #ffffff;
-  --green-theme-nav-background-color : #181818; */
+  --green-theme-nav-background-color : #181818;
 
 
   --purple-theme-background-color : #1d1d1d; 
@@ -46,7 +46,7 @@ html{
 }
 
 body {
-  background: var(--purple-theme-background-color);
+  background: var(--yellow-theme-background-color);
   height: 100%;
 }
 #root{

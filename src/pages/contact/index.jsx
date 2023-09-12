@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiContactsFill } from "react-icons/ri";
-import PageHeaderContent from "../../components/pageHeaderContent";
+import PageHeaderContent from "../../components/PageHeaderContent";
 import { Animate } from 'react-simple-animate';
 import './style.scss';
 import resume from '../../assets/resume.pdf'; 
