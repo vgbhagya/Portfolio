@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {HiX } from "react-icons/hi";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./style.scss";
 const data = [
@@ -38,7 +38,7 @@ const Navbar = () => {
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="navbar__container">
           <Link exact to="/" className="navbar__container__logo">
-            B
+            <FaReact size={30} />
           </Link>
           <ul className={click ? "navbar__container__menu active" : "navbar__container__menu"}>
             {data.map((item) => (

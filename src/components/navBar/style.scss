@@ -22,28 +22,15 @@
         align-items: center;
         cursor: pointer;
         text-decoration: none;
+        font-size: 2rem;
         flex-grow: 1;
-        font-size: 30px;
-        font-weight: bold;
-        background: linear-gradient( #FF5733, #FFC300, #33FF66, #3380FF);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  padding: 5px;
       }
       &__menu {
         display: flex;
         list-style: none;
         text-align: center;
-        background: linear-gradient( #FF5733, #FFC300, #33FF66, #3380FF);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      padding: 5px;
-       
         &__item {
-          line-height: 58px;
+          line-height: 70px;
           margin-right: 1.5rem;
           font-size: 1.6rem;
           &::after {
@@ -101,6 +88,7 @@
       left: -110%;
       opacity: 1;
       transition: all 0.5s ease;
+      
       &.active{
         background: #181818;
         left: 0px;
