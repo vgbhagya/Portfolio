@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBlackTie } from "react-icons/fa"; 
-import PageHeaderContent from "../../components/PageHeaderContent";
+import PageHeaderContent from "../../components/pageHeaderContent";
 import './style.scss';
 
 import CardList from "./CardList";

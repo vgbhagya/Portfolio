@@ -1,6 +1,6 @@
 import React from "react";
 import { GiSkills } from "react-icons/gi"; 
-import PageHeaderContent from "../../components/PageHeaderContent";
+import PageHeaderContent from "../../components/pageHeaderContent";
 import { Line } from 'rc-progress';
 import { Animate,AnimateKeyframes } from 'react-simple-animate';
 import { skillsData } from "./utils";

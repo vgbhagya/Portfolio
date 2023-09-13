@@ -1,6 +1,5 @@
 import React from "react";
 import './style.scss';
-
 function PageHeaderContent(props) {
   const { headerText, icon } = props;
   return (

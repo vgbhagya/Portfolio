@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillProject } from "react-icons/ai";
-import PageHeaderContent from "../../components/PageHeaderContent";
+import PageHeaderContent from "../../components/pageHeaderContent";
 import ProjectItem from '../projects/ProjectItem';
 import { projectLists } from "./projectList";
 import './style.scss';

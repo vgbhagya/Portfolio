@@ -15,14 +15,19 @@
   
 
     h1{
-      color: var(--yellow-theme-main-color);
-      margin: 5%;
+      //color: var(--yellow-theme-main-color);
+      margin: 2px;
       font-weight: 500;
-      font-size: 6.5rem;
-      line-height: 8.5rem;
+      font-size: 6rem;
+      line-height: 8rem;
       position: relative;
       overflow: hidden;
       white-space: nowrap;
+      background: linear-gradient( #FF5733, #FFC300, #33FF66, #3380FF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    padding: 5px;
       animation: typingEffectAnimation 2.5s steps(30, end);
     }
   }
@@ -37,13 +42,16 @@
 
 .homeList img {
   border: 1px solid rgb(241, 235, 235);
-  background-color: var(--yellow-theme-main-color);
+  //background-color: var(--yellow-theme-main-color);
+  background: linear-gradient( #FFC300, #33FF66);
   border-radius: 10px;
-  margin: 0px 10px 10px 10px ; /* Add some margin between images if desired */
+  margin: 0px 10px 10px 10px ; 
+  /* Add some margin between images if desired */
 }
 
 .homeList img:hover {
-  background-color: rgb(240, 244, 245); /* Change to a different background color */
+ // background-color: rgb(21, 181, 221); /* Change to a different background color */
+ background: linear-gradient( #d2b0cd, #d2bce4, #a9b8cf);
 }
 #github {
   width: 50px;
@@ -62,29 +70,24 @@
   height: 50px;
 }
 @media only screen and (max-width: 550px) {
-  .home__text-wrapper > h1 {
-    font-size: 3rem;
-    line-height: 5rem;
+  .home__text-wrapper  h1 {
+    font-size: 2rem;
+    line-height: 4rem;
   }
-  .contact-me{
-    flex-direction: column;
-    &__buttons-wrapper{
-      flex-direction: column;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 551px) and (max-width: 768px) {
-  .home__text-wrapper > h1 {
-    font-size: 4rem;
-    line-height: 6rem;
+  .home__text-wrapper  h1 {
+    font-size: 2rem;
+    line-height: 4rem;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-  .home__text-wrapper > h1 {
-    font-size: 6rem;
-    line-height: 8rem;
+  .home__text-wrapper  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 
