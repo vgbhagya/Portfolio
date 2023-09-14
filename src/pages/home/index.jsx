@@ -1,62 +1,82 @@
-import React from "react";
-import "./style.scss";
-import githubicon from "../../assets/githubicon.png";
-import linkedinicon from "../../assets/linkedinicon.png";
-import instagramicon from "../../assets/instagramicon.png";
-import twittericon from "../../assets/twittericon.png";
 import { Animate } from "react-simple-animate";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import "./style.scss";
 
-const Home = () => {
+function Home() {
+
   return (
-    <section id="home" className="home">
-      <div className="home_text-wrapper">
+    <section className="home" id="home">
+      <div className="home__text-wrapper">
         <h1>
           I'm Bhagyashree V G
-          <br/>
+          <br />
           Full Stack Developer
         </h1>
+        <Animate
+          play
+          duration={1.5}
+          delay={1}
+          start={{
+            transform: "translateY(600px)",
+          }}
+          end={{ transform: "translateX(0px)" }}
+        >
+           <div className="home-List">
+            <div className="home-List___socials-wrapper"></div>
+            <a
+              href="https://github.com/vgbhagya"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub
+                id="github"
+                alt="GitHub"
+                size={30}
+                color="var(--yellow-theme-main-color)"
+              />{" "}
+              {/* Use the imported icon components */}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bhagyasri-v-g-30a259245/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin
+                id="linkedin"
+                alt="LinkedIn"
+                size={30}
+                color="var(--yellow-theme-main-color)"
+              />
+            </a>
+            <a
+              href="https://instagram.com/his_lucky_charm_____?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram
+                id="insta"
+                alt="Instagram"
+                size={30}
+                color="var(--yellow-theme-main-color)"
+              />
+            </a>
+            <a
+              href="https://twitter.com/BHAGYASRIV37818"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter
+                id="twitter"
+                alt="Twitter"
+                size={30}
+                color="var(--yellow-theme-main-color)"
+              />
+            </a>
+          </div>
+        </Animate>
       </div>
-      <Animate
-      play
-      duration={1.8}
-      delay={1}
-      start={{
-        transform : 'translateY(550px)'
-      }}
-
-      end={{
-        transform : 'translatex(0px)'
-      }}
->
-      <div className="homeList">
-        <a href="https://github.com/vgbhagya" target="_blank" rel="noopener noreferrer">
-          <img id="github" src={githubicon} alt="GitHub" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/bhagyasri-v-g-30a259245/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img id="linkedin" src={linkedinicon} alt="LinkedIn" />
-        </a>
-        <a
-          href="https://instagram.com/his_lucky_charm_____?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img id="insta" src={instagramicon} alt="Instagram" />
-        </a>
-        <a
-          href="https://twitter.com/BHAGYASRIV37818"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img id="twitter" src={twittericon} alt="Twitter" />
-        </a>
-      </div>
-      </Animate>
     </section>
   );
-};
+}
 
 export default Home;
